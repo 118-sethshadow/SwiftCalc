@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     override func loadView() {
         
         //make a UIView to load
-        var frontView:UIView = UIView(frame: CGRectMake(0, 0, 1000, 1000))
+        let frontView:UIView = UIView(frame: CGRectMake(0, 0, 1000, 1000))
         frontView.backgroundColor = UIColor.purpleColor()
         
         //set button values
