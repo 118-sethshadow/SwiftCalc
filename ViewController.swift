@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         //make a UIView to load
         let frontView:UIView = UIView(frame: CGRectMake(0, 0, 1000, 1000))
         frontView.backgroundColor = UIColor.greenColor()
+
         
         //set button values
         b1.setTitle("1", forState: UIControlState.Normal)
