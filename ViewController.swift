@@ -34,7 +34,8 @@ class ViewController: UIViewController {
         
         //make a UIView to load
         let frontView:UIView = UIView(frame: CGRectMake(0, 0, 1000, 1000))
-        
+        frontView.backgroundColor = UIColor.greenColor()
+
         
         //set button values
         b1.setTitle("1", forState: UIControlState.Normal)
@@ -139,135 +140,50 @@ class ViewController: UIViewController {
     }
     
     func click1(sender:UIButton!){
-        if machineState == 0 || machineState == 1 || machineState == -1
-        {
-            output = ""
-            if machineState == 0
-            {
-                numHolder1 = 0
-            }
-        }
-        output = output.stringByAppendingString("1")
-        primeView.text = output
-        machineState = 2
-        
+        clickStaticButton("1")
     }
     
     func click2(sender:UIButton!) {
-        if machineState == 0 || machineState == 1 || machineState == -1
-        {
-            output = ""
-            if machineState == 0
-            {
-                numHolder1 = 0
-            }
-        }
-        output = output.stringByAppendingString("2")
-        primeView.text = output
-        machineState = 2
+        clickStaticButton("2")
     }
     
     func click3(sender:UIButton!) {
-        if machineState == 0 || machineState == 1 || machineState == -1
-        {
-            output = ""
-            if machineState == 0
-            {
-                numHolder1 = 0
-            }
-        }
-        output = output.stringByAppendingString("3")
-        primeView.text = output
-        machineState = 2
+        clickStaticButton("3")
     }
     
     func click4(sender:UIButton!){
-        if machineState == 0 || machineState == 1 || machineState == -1
-        {
-            output = ""
-            if machineState == 0
-            {
-                numHolder1 = 0
-            }
-        }
-        output = output.stringByAppendingString("4")
-        primeView.text = output
-        machineState = 2
-        
+        clickStaticButton("4")
     }
     
     func click5(sender:UIButton!) {
-        if machineState == 0 || machineState == 1 || machineState == -1
-        {
-            output = ""
-            if machineState == 0
-            {
-                numHolder1 = 0
-            }
-        }
-        output = output.stringByAppendingString("5")
-        primeView.text = output
-        machineState = 2
+        clickStaticButton("5")
     }
     
     func click6(sender:UIButton!) {
-        if machineState == 0 || machineState == 1 || machineState == -1
-        {
-            output = ""
-            if machineState == 0
-            {
-                numHolder1 = 0
-            }
-        }
-        output = output.stringByAppendingString("6")
-        primeView.text = output
-        machineState = 2
+        clickStaticButton("6")
     }
     
     func click7(sender:UIButton!){
-        if machineState == 0 || machineState == 1 || machineState == -1
-        {
-            output = ""
-            if machineState == 0
-            {
-                numHolder1 = 0
-            }
-        }
-        output = output.stringByAppendingString("7")
-        primeView.text = output
-        machineState = 2
-        
+        clickStaticButton("7")
     }
     
     func click8(sender:UIButton!) {
-        if machineState == 0 || machineState == 1 || machineState == -1
-        {
-            output = ""
-            if machineState == 0
-            {
-                numHolder1 = 0
-            }
-        }
-        output = output.stringByAppendingString("8")
-        primeView.text = output
-        machineState = 2
+        clickStaticButton("8")
     }
     
     func click9(sender:UIButton!) {
-        if machineState == 0 || machineState == 1 || machineState == -1
-        {
-            output = ""
-            if machineState == 0
-            {
-                numHolder1 = 0
-            }
-        }
-        output = output.stringByAppendingString("9")
-        primeView.text = output
-        machineState = 2
+        clickStaticButton("9")
     }
     
     func click0(sender:UIButton!){
+        clickStaticButton("0")
+    }
+    
+    func clickDot(sender:UIButton!){
+        clickStaticButton(".")
+    }
+    
+    func clickStaticButton(char:String){
         if machineState == 0 || machineState == 1 || machineState == -1
         {
             output = ""
@@ -276,21 +192,7 @@ class ViewController: UIViewController {
                 numHolder1 = 0
             }
         }
-        output = output.stringByAppendingString("0")
-        primeView.text = output
-        machineState = 2
-    }
-    
-    func clickDot(sender:UIButton!){
-        if machineState == 0 || machineState == 1
-        {
-            output = "0"
-            if machineState == 0
-            {
-                numHolder1 = 0
-            }
-        }
-        output = output.stringByAppendingString(".")
+        output = output.stringByAppendingString(char)
         primeView.text = output
         machineState = 2
     }
